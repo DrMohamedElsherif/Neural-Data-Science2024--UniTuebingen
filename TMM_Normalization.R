@@ -31,11 +31,12 @@ dge <- DGEList(counts = count_matrix)
 # Perform TMM normalization
 dge <- calcNormFactors(dge, method = "TMM")
 
+# We then apply cpm because TMM normalizes the library sizes, not the counts. 
 # Extract the normalized counts
 normalized_counts <- cpm(dge, normalized.lib.sizes = TRUE)
 
 # Save the normalized counts to a CSV file 
-write.csv(normalized_counts, file.path(data_path, "normalized_counts.csv"), row.names = TRUE)
+write.csv(normalized_counts, file.path(data_path, "TMM_normalized_counts.csv"), row.names = TRUE)
 
 print(head(normalized_counts))
 
