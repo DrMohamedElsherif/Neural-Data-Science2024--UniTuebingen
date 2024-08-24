@@ -1,2 +1,2 @@
 # Neural-Data-Science-2024
-Assignments and Final Project 
+In this project, part of my MSc in Medical Informatics at the University of Tübingen, I am collaborating with Marco Wolfer from the MSc Machine Learning program. We are working with multimodal data from the paper by Scala et al. (2021). Our focus is on transcriptomics and electrophysiological data. For simplicity, we are using exon counts from the transcriptomics gene counts. Additionally, we will filter out low-quality electrophysiological recordings to ensure the accuracy of our analysis. This work is part of our course assignments and final project.
